@@ -1,10 +1,10 @@
-DATA_DIR = "../data/images"
+DATA_DIR = "../data/"
 CSV_PATH = "../data/"
 CHECKPOINT_PATH = "../checkpoint"
 PLOT_PATH = "../plots"
-# DATA_DIR = "/content/drive/MyDrive/data/captcha"
-# CHECKPOINT_PATH = "/content/drive/MyDrive/data/checkpoint"
-# PLOT_PATH = "/content/drive/MyDrive/data/plots"
+# DATA_DIR = "/content/drive/MyDrive/data/melanoma"
+# CHECKPOINT_PATH = "/content/drive/MyDrive/data/melanoma/checkpoint"
+# PLOT_PATH = "/content/drive/MyDrive/data/melanoma/plots"
 TRAIN_BATCH_SIZE = 32
 EVAL_BATCH_SIZE = 16
 IMAGE_WIDTH = 300

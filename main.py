@@ -9,13 +9,14 @@ from sklearn import metrics
 from dataset import ClassificationDataset
 from engine import Engine
 from early_stopping import EarlyStopping
+import config
 
 import ssl; ssl._create_default_https_context = ssl._create_stdlib_context
 
 
 def train(fold):
-    training_data_path = "data/train"
-    df = pd.read_csv("data/train_folds.csv")
+    training_data_path = config.DATA_DIR + "train"
+    df = pd.read_csv(config.CSV_PATH + "train.csv")
     device = config.DEVICE
     epochs = config.EPOCHS
     train_bs = config.TRAIN_BATCH_SIZE
@@ -105,8 +106,8 @@ def train(fold):
 
 
 def predict(fold):
-    test_data_path = "../input/siic-isic-224x224-images/test/"
-    df = pd.read_csv("../input/siim-isic-melanoma-classification/test.csv")
+    test_data_path = config.DATA_DIR + "test"
+    df = pd.read_csv(config.CSV_PATH + "test.csv")
     device = "cuda"
     model_path=f"model_fold_{fold}.bin"
 
