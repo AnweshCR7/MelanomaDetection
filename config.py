@@ -1,0 +1,14 @@
+DATA_DIR = "../data/images"
+CSV_PATH = "../data/"
+CHECKPOINT_PATH = "../checkpoint"
+PLOT_PATH = "../plots"
+# DATA_DIR = "/content/drive/MyDrive/data/captcha"
+# CHECKPOINT_PATH = "/content/drive/MyDrive/data/checkpoint"
+# PLOT_PATH = "/content/drive/MyDrive/data/plots"
+TRAIN_BATCH_SIZE = 32
+EVAL_BATCH_SIZE = 16
+IMAGE_WIDTH = 300
+IMAGE_HEIGHT = 75
+NUM_WORKERS = 0
+DEVICE = "cpu"
+EPOCHS = 2
