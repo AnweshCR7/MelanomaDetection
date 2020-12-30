@@ -9,7 +9,6 @@ from sklearn import metrics
 from dataset import ClassificationDataset
 from engine import Engine
 from early_stopping import EarlyStopping
-import config
 
 import ssl; ssl._create_default_https_context = ssl._create_stdlib_context
 
