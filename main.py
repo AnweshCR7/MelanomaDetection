@@ -15,7 +15,7 @@ import ssl; ssl._create_default_https_context = ssl._create_stdlib_context
 
 def train(fold):
     training_data_path = config.DATA_DIR + "train"
-    df = pd.read_csv(config.CSV_PATH + "train.csv")
+    df = pd.read_csv(config.CSV_PATH + "train_folds.csv")
     device = config.DEVICE
     epochs = config.EPOCHS
     train_bs = config.TRAIN_BATCH_SIZE

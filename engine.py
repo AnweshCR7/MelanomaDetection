@@ -79,7 +79,7 @@ class Engine:
                     self.optimizer.step()
 
                 if self.scheduler is not None:
-                    self.scheduler.step()
+                    self.scheduler.step(losses.val)
 
                 if b_idx > 0:
                     self.optimizer.zero_grad()
